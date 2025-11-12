@@ -1,3 +1,84 @@
+@property --corTema{
+    syntax: "<color>";
+    inherits: false;
+    initial-value:rgb(60,179,113);
+}
+
 body{
-    background:white;
+    background-color:white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+}
+
+.topo{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--corTema);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 0 2%;
+    z-index: 10;
+}
+    
+.topo h1{
+    font-size: 20;
+}
+
+.topo div{
+    margin-right: 0.2%;
+    margin-left: 0.2%;
+}
+
+.main{
+    padding: 80px 10px;
+}
+
+.introducaoGrid{
+    display: grid;
+    grid-template-columns: 60% 30%;
+    gap:2%;
+    justify-content: center;
+
+}
+
+.batata{
+    height: 500px;
+    background: var(--corTema);
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2%;
+    justify-content: center;
+
+}
+
+.projetos div{
+    background: whitesmoke;
+    text-align: center;
+    box-shadow:-10px 10px 5px rgb(60,179,113, 0.5);
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform  0.2s ease;
+}
+
+.projetos div:hover{
+    transform: translateY(-5px);
+}
+
+.imagens{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1%;
+    border: 2px black solid;
 }
